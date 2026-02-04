@@ -1,0 +1,87 @@
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Will you be my Valentine?</title>
+
+  <!-- Confetti library -->
+  <script src="cdn.jsdelivr.net/npm/canvas_confetti_1.9.3/dist/confetti.browser.min.js"></script>
+
+  
+<link rel="stylesheet" href="css/inline_styles.css"></head>
+
+<body>
+  <canvas id="confettiCanvas" width="2532" height="1102" style="width: 100vw; height: 100vh;"></canvas>
+
+  <main class="card">
+    <!-- ANIMAL WITH HEART -->
+    <svg class="art" viewBox="0 0 320 240" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="fur" x1="0" x2="1">
+          <stop offset="0" stop-color="#f7c7a1"></stop>
+          <stop offset="1" stop-color="#f2a97b"></stop>
+        </linearGradient>
+        <linearGradient id="heart" x1="0" x2="1">
+          <stop offset="0" stop-color="#ff4d7d"></stop>
+          <stop offset="1" stop-color="#ff1f68"></stop>
+        </linearGradient>
+      </defs>
+
+      <path d="M250 50 C250 33 270 25 282 38
+               C294 25 314 33 314 50
+               C314 78 282 92 282 106
+               C282 92 250 78 250 50Z" fill="url(#heart)"></path>
+
+      <path d="M90 120 C90 70 140 40 190 60
+               C240 40 290 70 290 120
+               C290 180 240 210 190 210
+               C140 210 90 180 90 120Z" fill="url(#fur)"></path>
+
+      <path d="M110 92 L95 55 L140 78 Z" fill="#f2a97b"></path>
+      <path d="M270 92 L285 55 L240 78 Z" fill="#f2a97b"></path>
+
+      <circle cx="160" cy="130" r="8"></circle>
+      <circle cx="220" cy="130" r="8"></circle>
+
+      <path d="M190 144 C186 144 182 148 182 152
+               C182 160 190 164 190 170
+               C190 164 198 160 198 152
+               C198 148 194 144 190 144Z" fill="#ff7aa2"></path>
+    </svg>
+
+    <h1>Sana will you be my valentine?</h1>
+
+    <section class="button-zone" id="zone">
+      <button id="yesBtn" style="transform: translateY(-50%) scale(2.2);">Yes</button>
+      <button id="noBtn" style="left: 147.613px; top: 92.5px; transform: none;">No</button>
+    </section>
+
+    <!-- HINT -->
+    <div class="hint" id="hint">“No” seems a bit shy 😈</div>
+
+    <section class="result" id="result">
+      <h2>YAY! 🎉</h2>
+      <img class="fireworks" src="media.giphy.com/media/26ufdipqqu2lhna4g/giphy.gif" alt="Fireworks">
+    </section>
+  </main>
+
+  
+
+
+
+
+
+<container id="my-app-container"></container><audio class="audio-output" style="display: none;"></audio><div id="volume-booster-visusalizer">
+                    <div class="sound">
+                        <div class="sound-icon"></div>
+                        <div class="sound-wave sound-wave_one"></div>
+                        <div class="sound-wave sound-wave_two"></div>
+                        <div class="sound-wave sound-wave_three"></div>
+                    </div>
+                    <div class="segments-box">
+                        <div data-range="1-20" class="segment"><span></span></div>
+                        <div data-range="21-40" class="segment"><span></span></div>
+                        <div data-range="41-60" class="segment"><span></span></div>
+                        <div data-range="61-80" class="segment"><span></span></div>
+                        <div data-range="81-100" class="segment"><span></span></div>
+                    </div>
+                </div><script src="js/inline_scripts.js"></script></body></html>
